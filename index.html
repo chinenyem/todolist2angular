@@ -1,0 +1,54 @@
+<!Doctype html>
+
+<html lang ="en">
+<head>
+	<meta charset ="UTF-8">
+	<title>tiy-ng-day1</title>
+	<link rel="stylesheet" href ="css/main.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+</head>
+<!-- init page to be application , boot strap is ng-app-->
+
+<div ng-app id="round">
+  <h2>My Todo List...</h2>
+  <div ng-controller="TodoCtrl">
+   <form ng-submit="addTodo()">
+      <input  type="text" ng-model="todoText"  size="30"
+             placeholder="add new todo here" class="inputstyle">
+      <input  class="largebtn" type="submit" value="add">
+    </form>
+    
+    <ul class="unstyled">
+      <li ng-repeat="todo in todos">
+    <form>
+       <div><img  src="images/close.png" ng-click="todos.splice($index, 1)" class="closemark"> <input id="file-inputs" type="checkbox" ng-model="todo.done" >
+       <label for="file-inputs" ><img src="images/checkmark.png" /></label>
+        <span class="done-{{todo.done}}">{{todo.text}}</span> </div>
+      </form>
+      </li>
+    </ul>
+        
+        
+        <button class="clear-btn" ng-click="clearCompleted()">Clear All</button>
+    
+  </div>
+</div>
+
+  
+
+
+<!-- main controller end -->
+<script src="app/bower_components/angular/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Faker/0.5.11/MinFaker.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore.js"></script>
+
+
+
+<script src="js/main.js"></script>
+
+
+
+
+
+</body>
+</html>

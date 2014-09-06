@@ -1,0 +1,115 @@
+
+body{
+	background-color: #1acbfb;
+}
+
+#round{
+	border: 17px solid;
+	border-color: #1b6df9;
+width: 45%;
+margin-left: 29%;
+border-radius: 16%;
+height: 561px;
+}
+
+
+.inputstyle{
+	margin-top: -10%;
+	margin-left: 2%;
+	width: 76%;
+	height: 44px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	font-size: 20px;
+
+}
+
+
+.clear-btn{
+	border: none;
+background-color: transparent;
+margin-left: 30%;
+border-bottom-color: white;
+font-size: 31px;
+font-family: 'Oswald', sans-serif;
+margin-top: -4%;
+}
+ul{
+	background-color: white;
+	width: 74%;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	height: 256px;
+	margin-top: 2%;
+	margin-left: 9%;
+	list-style-type: none;
+	font-family: 'Oswald', sans-serif;
+}
+
+.ng-pristine{
+	margin-top: 4%;
+margin-left: 1%;
+}
+
+div span .done-true{
+	font-family: 'Oswald', sans-serif;
+
+
+}
+
+
+.largebtn{
+	height: 4pc;
+	background-color: creme;
+	border-radius: 27%;
+	width: 16%;
+	font-size: 27px;
+	font-family: 'Oswald', sans-serif;
+}
+
+ul.unstyled{
+	
+	list-style-type: none;
+font-family: 'Oswald', sans-serif;
+font-size: 32px;
+}
+
+
+h2{
+	margin-left: 38%;
+font-size: 55px;
+font-family: 'Oswald', sans-serif;
+font-style: bold;
+font-weight: 400;
+margin-bottom: 31px;
+}
+
+
+.done-{
+	font-size: 36px;
+	margin-left: 7%;
+}
+
+.closemark{
+	margin-left: 4%;
+
+}
+
+.done-true {
+  text-decoration: none;
+  
+}
+
+.done-false {
+	text-decoration: line-through;
+  
+}
+
+.unstyled  input
+{
+    display: none;
+}
